@@ -1,0 +1,71 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Detail Pendaftaran</div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="daftar-detail" class="page">
+        <div class="page-content">
+            <div class="content-block-title">Detail Pendaftaran</div>
+            <form class="formDaftarDetail">
+                <input type="hidden" name="id_daftar" value="{{url_query.id_daftar}}" />
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">No Antri</div>
+                                    <div class="item-input">
+                                        <input type="number" name="no_antrian" placeholder="No Antri" value="{{url_query.no_antrian}}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">No. RM</div>
+                                    <div class="item-input">
+                                        <input type="text" name="norm" placeholder="No. Rekam Medis" value="{{url_query.norm}}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Nama</div>
+                                    <div class="item-input">
+                                        <input type="text" name="nama" placeholder="Nama" value="{{url_query.nama}}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Poli</div>
+                                    <div class="item-input">
+                                        <select name="poli" class="poli" value="{{url_query.poli}}"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <div class="row">
+                <div></div>
+                <a href="#" class="button tombolUbah">Ubah</a>
+                <a href="#" class="button tombolHapus">Hapus</a>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
