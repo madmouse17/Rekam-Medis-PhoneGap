@@ -1,19 +1,61 @@
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="center sliding">History</div>
-        <div class="right">
-            <a href="#" class="link icon-only open-panel">
-                <i class="icon icon-bars"></i>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="pages">
-    <div data-page="history" class="page">
-        <div class="page-content">
-            <div class="list-block media-list">
-                <ul class="list-history"></ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">RMIK Mobile</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i
+              ></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding">History</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only open-panel">
+                            <i class="icon icon-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <div data-page="history" class="page">
+                    <div class="page-content">
+                        <div class="list-block media-list">
+                            <ul class="list-history"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+
+</html>
