@@ -24,22 +24,15 @@ data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
+
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">RMIK Mobile</div>
-                    <div class="right">
-                        <!--
-                          Right link contains only icon - additional "icon-only" class
-                          Additional "open-panel" class tells app to open panel when we click on this link
-                        -->
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i
-              ></a>
+                    <div class="left">
+                        <a href="#" class="back link">
+                            <i class="icon icon-back"></i>
+                            <span>Back</span>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="navbar">
-                <div class="navbar-inner">
                     <div class="center sliding">History</div>
                     <div class="right">
                         <a href="#" class="link icon-only open-panel">
@@ -48,6 +41,7 @@ data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
                     </div>
                 </div>
             </div>
+
             <div class="pages">
                 <div data-page="history" class="page">
                     <div class="page-content">

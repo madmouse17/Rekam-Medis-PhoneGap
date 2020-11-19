@@ -11,8 +11,10 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-
-    <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" ; />
+    <meta http-equiv="Content-Security-Policy" content="default-src *
+        data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
+        'unsafe-inline'; media-src *" />
+    <!-- <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" ; /> -->
 
     <!-- Required meta tags-->
     <meta charset="utf-8" />
@@ -44,12 +46,22 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <h2 align="center">SELAMAT DATANG</h2>
-            <h3 align="center">APLIKASI RMIK BERBASIS ANDROID</h3>
-            <center><img src="logo.jpg" width="65%" /></center>
-            <p align="center">
-                Aplikasi ini merupakan hasil dari kuliah umum dengan tema APLIKASI REKAM MEDIS ELEKTRONIKA BERBASIS ANDROID
-            </p>
+            <a class="button button-fill color-blue close-panel" href="index.html">
+          Welcome
+        </a>
+            <br />
+            <a class="button button-fill color-blue close-panel" href="history.html">
+          History Pendaftar
+        </a>
+            <br />
+            <a class="button button-fill color-blue close-panel" href="daftar.html">
+          Pendaftaran
+        </a>
+            <br />
+            <a class="button button-fill color-blue close-panel" href="about.html">
+          About
+        </a>
+            <br />
         </div>
     </div>
 
@@ -79,22 +91,12 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <a class="button button-fill color-blue close-panel" href="index.html">
-                  Welcome
-                </a>
-                            <br />
-                            <a class="button button-fill color-blue close-panel" href="history.html">
-                  History Pendaftar
-                </a>
-                            <br />
-                            <a class="button button-fill color-blue close-panel" href="daftar.html">
-                  Pendaftaran
-                </a>
-                            <br />
-                            <a class="button button-fill color-blue close-panel" href="about.html">
-                  About
-                </a>
-                            <br />
+                            <h2 align="center">SELAMAT DATANG</h2>
+                            <h3 align="center">APLIKASI RMIK BERBASIS ANDROID</h3>
+                            <center><img src="logo.jpg" width="65%" /></center>
+                            <p align="center">
+                                Aplikasi ini merupakan hasil dari kuliah umum dengan tema APLIKASI REKAM MEDIS ELEKTRONIKA BERBASIS ANDROID
+                            </p>
                         </div>
                     </div>
                 </div>

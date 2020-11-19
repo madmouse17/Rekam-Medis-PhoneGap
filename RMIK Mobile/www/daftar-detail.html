@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
 
-
     <!-- Required meta tags-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
@@ -21,98 +20,80 @@
 </head>
 
 <body>
-    <div class="views">
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Top Navbar-->
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">RMIK Mobile</div>
-                    <div class="right">
-                        <!--
-                          Right link contains only icon - additional "icon-only" class
-                          Additional "open-panel" class tells app to open panel when we click on this link
-                        -->
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i
-              ></a>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="icon icon-back"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+            <div class="center sliding">Detail Pendaftaran</div>
+        </div>
+    </div>
+    <div class="pages">
+        <div data-page="daftar-detail" class="page">
+            <div class="page-content">
+                <div class="content-block-title">Detail Pendaftaran</div>
+                <form class="formDaftarDetail">
+                    <input type="hidden" name="id_daftar" value="{{url_query.id_daftar}}" />
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">No Antri</div>
+                                        <div class="item-input">
+                                            <input type="number" name="no_antrian" placeholder="No Antri" value="{{url_query.no_antrian}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">No. RM</div>
+                                        <div class="item-input">
+                                            <input type="text" name="norm" placeholder="No. Rekam Medis" value="{{url_query.norm}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Nama</div>
+                                        <div class="item-input">
+                                            <input type="text" name="nama" placeholder="Nama" value="{{url_query.nama}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Poli</div>
+                                        <div class="item-input">
+                                            <select name="poli" class="poli" value="{{url_query.poli}}"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </form>
+                <div class="row">
+                    <div></div>
+                    <a href="#" class="button tombolUbah">Ubah</a>
+                    <a href="#" class="button tombolHapus">Hapus</a>
+                    <div></div>
                 </div>
             </div>
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="left">
-                        <a href="#" class="back link">
-                            <i class="icon icon-back"></i>
-                            <span>Back</span>
-                        </a>
-                    </div>
-                    <div class="center sliding">Detail Pendaftaran</div>
-                </div>
-            </div>
-            <div class="pages">
-                <div data-page="daftar-detail" class="page">
-                    <div class="page-content">
-                        <div class="content-block-title">Detail Pendaftaran</div>
-                        <form class="formDaftarDetail">
-                            <input type="hidden" name="id_daftar" value="{{url_query.id_daftar}}" />
-                            <div class="list-block">
-                                <ul>
-                                    <li>
-                                        <div class="item-content">
-                                            <div class="item-inner">
-                                                <div class="item-title label">No Antri</div>
-                                                <div class="item-input">
-                                                    <input type="number" name="no_antrian" placeholder="No Antri" value="{{url_query.no_antrian}}" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-content">
-                                            <div class="item-inner">
-                                                <div class="item-title label">No. RM</div>
-                                                <div class="item-input">
-                                                    <input type="text" name="norm" placeholder="No. Rekam Medis" value="{{url_query.norm}}" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-content">
-                                            <div class="item-inner">
-                                                <div class="item-title label">Nama</div>
-                                                <div class="item-input">
-                                                    <input type="text" name="nama" placeholder="Nama" value="{{url_query.nama}}" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-content">
-                                            <div class="item-inner">
-                                                <div class="item-title label">Poli</div>
-                                                <div class="item-input">
-                                                    <select name="poli" class="poli" value="{{url_query.poli}}"></select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                        <div class="row">
-                            <div></div>
-                            <a href="#" class="button tombolUbah">Ubah</a>
-                            <a href="#" class="button tombolHapus">Hapus</a>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script type="text/javascript" src="cordova.js"></script>
-            <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-            <script src="js/my-app.js"></script>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script src="js/my-app.js"></script>
 </body>
 
 </html>
