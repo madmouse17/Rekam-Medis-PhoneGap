@@ -110,6 +110,9 @@ $$(document).on("pageInit", '.page[data-page="daftar"]', function(e) {
 //KODE UNTUK HALAMAN DAFTAR DETAIL
 $$(document).on("pageInit", '.page[data-page="daftar-detail"]', function(e) {
     //KODE UNTUK AMBIL DATA POLI
+	var formData=e.detail.page.query;
+	myApp.formFromJSON('.formDaftarDetail',formData);
+	
     $$.get("http://localhost:3000/poli", {}, function(data, status, xhr) {
         var json = JSON.parse(data);
         var pasien = json.data;
